@@ -1,0 +1,17 @@
+# Virtual environment
+.venv/
+
+# Python bytecode
+__pycache__/
+*.py[cod]
+
+# Packaging / build artifacts
+*.egg-info/
+dist/
+build/
+
+# Test cache
+.pytest_cache/
+
+# Local editor / tool settings (not for sharing)
+.claude/settings.local.json

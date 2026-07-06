@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "wordle-solver"
+version = "0.1.0"
+description = "Hard-mode Wordle solving assistant"
+requires-python = ">=3.9"
+
+[project.scripts]
+wordle = "wordle_solver.cli:run"
+
+[tool.setuptools.packages.find]
+include = ["wordle_solver*"]
+
+[tool.setuptools.package-data]
+wordle_solver = ["data/*.txt"]
+
+[project.optional-dependencies]
+dev = ["pytest"]
