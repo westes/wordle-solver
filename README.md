@@ -77,6 +77,7 @@ The solver prints how many candidates remain, lists them when 20 or fewer are le
 | `/round` | Start a new wager round: clears solver state and the round total, exits practice mode |
 | `/price` | Reset per-letter wager prices to the defaults ($1 correct / $2 present / $3 absent) |
 | `/price <g> <y> <b>` | Set custom per-letter prices, e.g. `/price 2 3 5` |
+| `/addword <word>` | Add a missing word to the answers list, removing it from the guesses-only list if it was there |
 
 ## Wager tracking
 

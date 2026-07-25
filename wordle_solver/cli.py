@@ -7,7 +7,7 @@ from collections import Counter
 from .game import Clue, score_guess, str_to_pattern
 from .solver import MAX_GUESSES, WORD_LEN, Solver, rank_guesses
 from .wager import Wager
-from .words import load_answers, load_extra_guesses
+from .words import add_answer_word, load_answers, load_extra_guesses
 
 HELP_TEXT = """\
 Enter each letter followed by its result digit, e.g.:
@@ -28,6 +28,8 @@ Commands:
     /round                   start a new wager round: clears solver + round total, exits practice
     /price                   reset per-letter $ values to the default $1/$2/$3
     /price <g> <y> <b>       set per-letter $ values, e.g. `/price 1 2 3`
+    /addword <word>          add a missing word to the answers list (and
+                             remove it from the guesses-only list if present)
 """
 
 
@@ -94,6 +96,32 @@ def handle_slash_command(line: str, solver: Solver, wager: Wager, state: dict, a
             print("Usage: `/price` (reset to $1/$2/$3) or `/price <correct> <present> <absent>`")
             return
         print(f"Round total so far: ${wager.round_total}  |  session total: ${wager.session_total}")
+        return
+
+    if cmd == "/addword":
+        args = parts[1:]
+        if len(args) != 1:
+            print("Usage: /addword <word>")
+            return
+        word = args[0].lower()
+        if len(word) != WORD_LEN or not word.isalpha():
+            print(f"Word must be exactly {WORD_LEN} letters.")
+            return
+        if word in solver.answers:
+            print(f"{word.upper()} is already in the answers list.")
+            return
+
+        result = add_answer_word(word)
+        solver.answers.append(word)
+        solver.answers.sort()
+        if result["removed_from_guesses"]:
+            solver.extra_guesses.remove(word)
+            print(f"Added {word.upper()} to answers.txt and removed it from guesses.txt.")
+        else:
+            print(f"Added {word.upper()} to answers.txt.")
+
+        if all(score_guess(rec.guess, word) == rec.pattern for rec in solver.history):
+            solver.candidates.append(word)
         return
 
     print(f"Unknown command: {cmd}  (try 'help')")
