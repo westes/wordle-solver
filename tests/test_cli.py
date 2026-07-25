@@ -4,8 +4,8 @@ import pytest
 
 from wordle_solver import cli
 from wordle_solver.game import Clue, score_guess
-from wordle_solver.cli import handle_slash_command, parse_line, hard_mode_violation
-from wordle_solver.solver import Solver
+from wordle_solver.cli import handle_slash_command, parse_line, hard_mode_violation, print_suggestions
+from wordle_solver.solver import Solver, rank_guesses
 from wordle_solver.wager import Wager
 
 G = Clue.GREEN
@@ -153,3 +153,22 @@ class TestAddWordCommand:
         handle_slash_command("/addword chase", solver, Wager(), {}, solver.answers, self._opts())
 
         assert "chase" in solver.candidates
+
+
+class TestPrintSuggestionsOrder:
+    def test_possible_answers_printed_in_heuristic_order_not_alphabetical(self, capsys):
+        # Deliberately not alphabetical so a bug that re-sorts alphabetically
+        # would be caught: alphabetical order here is amigo, aroma, mango.
+        answers = ["mango", "amigo", "aroma"]
+        solver = Solver(answers=answers, extra_guesses=[])
+
+        print_suggestions(solver, top_n=10, position_weight=1.0, presence_weight=1.0)
+
+        expected_order = [
+            word for word, _, _ in
+            rank_guesses(answers, answers, top_n=len(answers), position_weight=1.0, presence_weight=1.0)
+        ]
+        assert expected_order != sorted(answers)  # sanity check the fixture is non-alphabetical
+
+        printed_line = capsys.readouterr().out.splitlines()[2]
+        assert printed_line.strip() == ", ".join(expected_order)

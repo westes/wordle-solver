@@ -130,8 +130,10 @@ def handle_slash_command(line: str, solver: Solver, wager: Wager, state: dict, a
 def print_suggestions(solver: Solver, top_n: int, position_weight: float, presence_weight: float):
     n_remaining = len(solver.candidates)
     print(f"\n{n_remaining} possible answer(s) remain.")
-    if n_remaining <= 20:
-        print("  " + ", ".join(sorted(solver.candidates)))
+    if 0 < n_remaining <= 20:
+        ranked_candidates = rank_guesses(solver.candidates, solver.candidates, top_n=n_remaining,
+                                          position_weight=position_weight, presence_weight=presence_weight)
+        print("  " + ", ".join(word for word, _, _ in ranked_candidates))
 
     pool = solver.hard_mode_pool()
     suggestions = rank_guesses(pool, solver.candidates, top_n=top_n,
