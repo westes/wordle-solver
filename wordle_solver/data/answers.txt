@@ -59,6 +59,7 @@ allot
 allow
 alloy
 aloft
+aloha
 alone
 along
 aloof
