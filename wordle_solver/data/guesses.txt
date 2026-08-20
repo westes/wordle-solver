@@ -1704,7 +1704,6 @@ cloze
 clubs
 clues
 cluey
-clunk
 clype
 cnida
 coact
