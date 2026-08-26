@@ -135,7 +135,7 @@ def print_suggestions(solver: Solver, top_n: int, position_weight: float, presen
                                           position_weight=position_weight, presence_weight=presence_weight)
         print("  " + ", ".join(word for word, _, _ in ranked_candidates))
 
-    pool = solver.hard_mode_pool()
+    pool = solver.candidates if 0 < n_remaining <= 10 else solver.hard_mode_pool()
     suggestions = rank_guesses(pool, solver.candidates, top_n=top_n,
                                 position_weight=position_weight, presence_weight=presence_weight)
     if not suggestions:
