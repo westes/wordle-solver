@@ -492,7 +492,6 @@ ataxy
 atigi
 atilt
 atimy
-atlas
 atman
 atmas
 atmos
@@ -503,7 +502,6 @@ atoms
 atomy
 atony
 atopy
-atria
 atrip
 attap
 attar
@@ -643,7 +641,6 @@ balls
 bally
 balms
 baloo
-balsa
 balti
 balun
 balus
@@ -749,7 +746,6 @@ beath
 beats
 beaty
 beaus
-beaut
 beaux
 bebop
 becap
@@ -1427,7 +1423,6 @@ carls
 carns
 carny
 carob
-carom
 caron
 carpi
 carps
@@ -1758,7 +1753,6 @@ colds
 coled
 coles
 coley
-colic
 colin
 colls
 colly
@@ -1968,7 +1962,6 @@ cubeb
 cubed
 cuber
 cubes
-cubit
 cuddy
 cuffo
 cuffs
@@ -2333,7 +2326,6 @@ dives
 divis
 divna
 divos
-divot
 divvy
 diwan
 dixie
@@ -2722,7 +2714,6 @@ emmer
 emmet
 emmew
 emmys
-emoji
 emong
 emote
 emove
@@ -3530,7 +3521,6 @@ gites
 giust
 gived
 gives
-gizmo
 glace
 glads
 glady
@@ -3616,7 +3606,6 @@ goers
 goest
 goeth
 goety
-gofer
 goffs
 gogga
 gogos
@@ -3720,7 +3709,6 @@ grice
 gride
 grids
 griff
-grift
 grigs
 grike
 grins
@@ -3762,7 +3750,6 @@ grype
 grypt
 guaco
 guana
-guano
 guans
 guars
 gucks
@@ -3791,7 +3778,6 @@ gundy
 gunge
 gungy
 gunks
-gunky
 gunny
 guqin
 gurdy
@@ -4239,7 +4225,6 @@ hutia
 huzza
 huzzy
 hwyls
-hydra
 hyens
 hygge
 hying
@@ -4329,7 +4314,6 @@ incus
 incut
 indew
 india
-indie
 indol
 indow
 indri
@@ -4653,7 +4637,6 @@ kawed
 kayle
 kayos
 kazis
-kazoo
 kbars
 kebar
 kebob
@@ -4670,7 +4653,6 @@ keens
 keeps
 keets
 keeve
-kefir
 kehua
 keirs
 kelep
@@ -4803,7 +4785,6 @@ knars
 knaur
 knawe
 knees
-knell
 knish
 knits
 knive
@@ -5000,7 +4981,6 @@ larns
 larnt
 larum
 lased
-laser
 lases
 lassi
 lassu
@@ -5295,7 +5275,6 @@ lordy
 lorel
 lores
 loric
-loris
 losed
 losel
 losen
@@ -5542,7 +5521,6 @@ mates
 maths
 matin
 matlo
-matte
 matts
 matza
 matzo
@@ -5554,7 +5532,6 @@ mauri
 mausy
 mauts
 mauzy
-maven
 mavie
 mavin
 mavis
@@ -5809,7 +5786,6 @@ molts
 molys
 momes
 momma
-mommy
 momus
 monad
 monal
@@ -5826,7 +5802,6 @@ monos
 monte
 monty
 moobs
-mooch
 moods
 mooed
 mooks
@@ -5917,7 +5892,6 @@ muffs
 mufti
 mugga
 muggs
-muggy
 muhly
 muids
 muils
@@ -6117,7 +6091,6 @@ nerks
 nerol
 nerts
 nertz
-nervy
 nests
 netes
 netop
@@ -6296,7 +6269,6 @@ oaker
 oakum
 oared
 oases
-oasis
 oasts
 oaten
 oater
@@ -6406,7 +6378,6 @@ onned
 ontic
 oobit
 oohed
-oomph
 oonts
 ooped
 oorie
@@ -6838,7 +6809,6 @@ pints
 pinup
 pions
 piony
-pious
 pioye
 pioys
 pipal
@@ -7084,7 +7054,6 @@ prigs
 prill
 prima
 primi
-primp
 prims
 primy
 prink
@@ -7119,7 +7088,6 @@ pruta
 pryer
 pryse
 pseud
-pshaw
 psion
 psoae
 psoai
@@ -8176,7 +8144,6 @@ shiai
 shiel
 shier
 shies
-shill
 shily
 shims
 shins
@@ -8217,7 +8184,6 @@ shott
 showd
 shows
 shoyu
-shred
 shris
 shrow
 shtik
@@ -8303,7 +8269,6 @@ sisal
 sises
 sista
 sists
-sitar
 sited
 sites
 sithe
@@ -8476,7 +8441,6 @@ smurs
 smush
 smuts
 snabs
-snafu
 snags
 snaps
 snarf
@@ -8661,7 +8625,6 @@ spans
 spard
 spars
 spart
-spate
 spats
 spaul
 spawl
@@ -8742,7 +8705,6 @@ spyre
 squab
 squaw
 squeg
-squid
 squit
 squiz
 stabs
@@ -8875,7 +8837,6 @@ sucre
 sudds
 sudor
 sudsy
-suede
 suent
 suers
 suete
@@ -9124,7 +9085,6 @@ tatus
 taube
 tauld
 tauon
-taupe
 tauts
 tavah
 tavas
@@ -9335,7 +9295,6 @@ tinds
 tinea
 tined
 tines
-tinge
 tings
 tinks
 tinny
@@ -9357,9 +9316,7 @@ titup
 tiyin
 tiyns
 tizes
-tizzy
 toads
-toady
 toaze
 tocks
 tocky
@@ -9826,7 +9783,6 @@ usury
 uteri
 uveal
 uveas
-uvula
 vacua
 vaded
 vades
