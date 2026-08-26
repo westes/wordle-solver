@@ -333,6 +333,7 @@ canny
 canoe
 canon
 caper
+capon
 caput
 carat
 cargo
