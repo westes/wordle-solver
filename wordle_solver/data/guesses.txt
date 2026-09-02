@@ -4835,7 +4835,6 @@ inrun
 insee
 inset
 inspo
-intel
 intil
 intis
 intra
@@ -8950,7 +8949,6 @@ remap
 remen
 remet
 remex
-remix
 remou
 renay
 rends

@@ -1059,6 +1059,7 @@ inlay
 inlet
 inner
 input
+intel
 inter
 intro
 ionic
@@ -1607,6 +1608,7 @@ relax
 relay
 relic
 remit
+remix
 renal
 renew
 repay
