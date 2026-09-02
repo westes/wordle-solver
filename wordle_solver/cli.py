@@ -5,6 +5,7 @@ import random
 from collections import Counter
 
 from .game import Clue, score_guess, str_to_pattern
+from .nyt_check import maybe_check_nyt_word
 from .solver import MAX_GUESSES, WORD_LEN, Solver, rank_guesses
 from .wager import Wager
 from .words import add_answer_word, load_answers, load_extra_guesses
@@ -155,6 +156,11 @@ def run(args=None):
                          help="weight on per-position letter frequency (default: 1.0)")
     parser.add_argument("--presence-weight", type=float, default=1.0,
                          help="weight on overall letter presence frequency (default: 1.0)")
+    nyt_group = parser.add_mutually_exclusive_group()
+    nyt_group.add_argument("--no-nyt-check", action="store_true",
+                            help="skip the automatic check of today's NYT Wordle answer")
+    nyt_group.add_argument("--force-nyt-check", action="store_true",
+                            help="check today's NYT Wordle answer even if already checked today")
     opts = parser.parse_args(args)
 
     answers = load_answers()
@@ -162,6 +168,8 @@ def run(args=None):
     solver = Solver(answers, extra_guesses)
     wager = Wager()
     state = {"secret": None, "guesses_made": 0}
+
+    maybe_check_nyt_word(solver, skip=opts.no_nyt_check, force=opts.force_nyt_check)
 
     print("Wordle hard-mode assistant. Type 'help' for instructions.")
     print(f"Wager prices: {wager.prices_str()}")
