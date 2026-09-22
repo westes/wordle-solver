@@ -7625,7 +7625,6 @@ paean
 paedo
 paeon
 paged
-pager
 pages
 pagle
 pagne

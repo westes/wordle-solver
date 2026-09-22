@@ -1401,6 +1401,7 @@ oxide
 ozone
 paddy
 pagan
+pager
 paint
 paler
 palsy
