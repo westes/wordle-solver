@@ -11824,7 +11824,6 @@ waite
 waits
 wakas
 waked
-waken
 waker
 wakes
 wakfs
