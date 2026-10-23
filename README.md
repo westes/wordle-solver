@@ -4,28 +4,30 @@ A hard-mode Wordle solving assistant. It narrows the candidate word list as you 
 
 ## Install
 
-### With pipx (recommended)
+### With uv (recommended)
 
-[pipx](https://pipx.pypa.io) installs the `wordle` command globally in an isolated environment — no virtual environment to manage.
+[uv](https://docs.astral.sh/uv/) installs the `wordle` command globally in an isolated environment — no virtual environment to manage.
 
 ```bash
-pipx install .
+uv tool install .
 ```
 
 To pick up code changes after editing the source:
 
 ```bash
-pipx reinstall wordle-solver
+uv tool install --reinstall .
 ```
 
-### With pip (development)
+Or install it editable (`uv tool install --editable .`) and edits take effect immediately.
+
+### Development
 
 Requires Python 3.9+.
 
 ```bash
-python3 -m venv .venv
+uv venv
 source .venv/bin/activate
-pip install -e .
+uv pip install -e .
 ```
 
 This installs the `wordle` command into the virtual environment's `bin/`.
