@@ -8443,7 +8443,6 @@ psoae
 psoai
 psoas
 psora
-psych
 psyop
 ptish
 ptype
