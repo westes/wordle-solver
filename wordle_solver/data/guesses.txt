@@ -1472,7 +1472,6 @@ bumbo
 bumfs
 bumph
 bumps
-bumpy
 bunas
 bunce
 bunco
