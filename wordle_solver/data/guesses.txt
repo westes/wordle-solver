@@ -4149,7 +4149,6 @@ grips
 gript
 gripy
 grise
-grist
 grisy
 grith
 grits
