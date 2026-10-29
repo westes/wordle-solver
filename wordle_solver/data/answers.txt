@@ -1007,6 +1007,7 @@ hitch
 hoard
 hobby
 hoist
+holey
 holly
 homer
 honey
